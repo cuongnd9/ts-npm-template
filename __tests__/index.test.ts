@@ -1,3 +1,3 @@
-test('echo test', async() => {
+it('test', async() => {
   expect(true).toEqual(true);
 });
