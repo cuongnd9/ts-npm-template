@@ -1,5 +1,5 @@
 {
-  "name": "ts-npm-template",
+  "name": "typescript-npm-template",
   "version": "0.0.1",
   "description": "A TypeScript template 🌼 for npm package",
   "main": "./lib/index.js",
@@ -22,7 +22,7 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint && npm test"
+    "prepublishOnly": "npm run lint"
   },
   "lint-staged": {
     "*.ts": [
@@ -48,7 +48,7 @@
     "nodemon": "^2.0.3",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.4.1",
-    "typescript": "^3.4.4"
+    "typescript": "^3.8.3"
   },
   "dependencies": {}
 }
