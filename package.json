@@ -21,11 +21,12 @@
     "build": "rm -rf lib && tsc -p tsconfig.build.json",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
-    "prepublishOnly": "npm run lint"
+    "prepublishOnly": "npm run lint & npm test"
   },
   "lint-staged": {
     "*.ts": [
-      "npm run lint"
+      "npm run lint",
+      "npm test"
     ]
   },
   "husky": {
