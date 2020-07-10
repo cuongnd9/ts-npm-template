@@ -21,7 +21,8 @@
     "build": "rm -rf lib && tsc -p tsconfig.build.json",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint --fix src/**/*.ts",
-    "prepublishOnly": "yarn lint & yarn test & yarn build"
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint & yarn test"
   },
   "lint-staged": {
     "*.ts": [
