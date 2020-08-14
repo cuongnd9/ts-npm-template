@@ -1,6 +1,7 @@
 src
 examples
-test
+_tests_
+jestconfig.json
 tsconfig.json
 tslint.json
 .prettierrc
